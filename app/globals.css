@@ -8,11 +8,11 @@ body {
 }
 
 .card {
-  @apply bg-white rounded-lg p-5 shadow-sm;
+  @apply bg-white rounded-2xl p-6 shadow;
 }
 
 .btn {
-  @apply rounded-md px-4 py-2 font-medium text-sm;
+  @apply rounded-md px-4 py-2 font-medium text-sm transition-colors;
 }
 
 .btn-primary {
@@ -20,7 +20,7 @@ body {
 }
 
 .btn-secondary {
-  @apply bg-white text-blue-500 border border-blue-500 hover:bg-blue-50;
+  @apply bg-transparent text-blue-500 border border-blue-500 hover:text-white hover:bg-blue-500;
 }
 
 .back-link {

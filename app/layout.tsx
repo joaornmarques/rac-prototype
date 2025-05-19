@@ -7,6 +7,7 @@ const mulish = Mulish({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-mulish",
+  weight: ["300", "400", "500", "600", "700", "800"],
 })
 
 export const metadata: Metadata = {
@@ -20,8 +21,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={`${mulish.variable} font-mulish bg-gray-50`}>{children}</body>
+    <html lang="en" className={mulish.variable}>
+      <body className="font-mulish bg-gray-50">{children}</body>
     </html>
   )
 }
