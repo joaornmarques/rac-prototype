@@ -31,11 +31,6 @@ export default function CarDetailPage({ params }: { params: Promise<{ id: string
   }
 
   // Hardcoded data for pick up/drop off and rental price
-  const pickUpDate = "15 July 2024 at 9 pm"
-  const dropOffDate = "22 July 2024 at 9 pm"
-  const location = "Athens (ATH)"
-  const addressLine1 = "Address Line 1"
-  const addressLine2 = "Address Line 2"
   const totalDays = 7
   const totalPrice = car.price * totalDays
 
